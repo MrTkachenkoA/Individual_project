@@ -35,7 +35,7 @@ const MoviesSearch = () => {
         if (res.data.results.length === 0) {
           setRequestedMovies([]);
           setLoading(false);
-          errorMessage('Not found');
+          errorMessage('Not found! Try another query');
           return navigate(`/movies`);
         }
 
