@@ -44,7 +44,8 @@ const MoviesSearch = () => {
       } catch {
         console.log('Oops! Something went wrong! Try again!');
         errorMessage('Oops! Something went wrong! Try again!');
-        return navigate(`*`);
+        // return navigate(`*`);
+        return;
       }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
