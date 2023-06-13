@@ -36,7 +36,8 @@ const MovieDetails = () => {
         return navigate(`*`);
       }
     })();
-  }, [movieId, navigate]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [movieId]);
 
   const {
     poster_path,

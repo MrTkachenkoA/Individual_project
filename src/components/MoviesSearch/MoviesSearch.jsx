@@ -47,7 +47,8 @@ const MoviesSearch = () => {
         return navigate(`*`);
       }
     })();
-  }, [navigate, savedQuery]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [savedQuery]);
 
   const handleSubmit = e => {
     e.preventDefault();
