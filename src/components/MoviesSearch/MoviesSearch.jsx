@@ -53,11 +53,18 @@ const MoviesSearch = () => {
   const handleSubmit = e => {
     e.preventDefault();
     setLoading(true);
-    if (!query.trim() || savedQuery === query.trim().toLowerCase()) {
+    
+    if (!query.trim()) {
       setLoading(false);
       infoMessage('Enter a query to search');
       return;
     }
+    if (savedQuery === query.trim().toLowerCase()) {
+      setLoading(false);
+      infoMessage('Enter a new query');
+      return;
+    }
+    
     setSearchParams({ query: query.trim().toLowerCase() });
   };
 
