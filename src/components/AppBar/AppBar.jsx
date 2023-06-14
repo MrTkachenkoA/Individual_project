@@ -4,8 +4,12 @@ export const AppBar = () => {
   return (
     <Header>
       <Nav>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/movies">Movies</StyledLink>
+        <StyledLink to="/" tabIndex="1">
+          Home
+        </StyledLink>
+        <StyledLink to="/movies" tabIndex="1">
+          Movies
+        </StyledLink>
       </Nav>
     </Header>
   );

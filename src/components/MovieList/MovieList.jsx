@@ -12,8 +12,12 @@ export const MovieList = ({ moviesArr }) => {
     <MovieUl>
       {moviesArr.map(({ id, original_title, original_name, poster_path }) => {
         return (
-          <MovieItem key={id}>
-            <MovieLink to={`/movies/${id}`} state={{ from: location }}>
+          <MovieItem key={id} tabIndex="2">
+            <MovieLink
+              to={`/movies/${id}`}
+              state={{ from: location }}
+              tabIndex="-1"
+            >
               {poster_path ? (
                 <img
                   src={IMG_PATH + poster_path}
