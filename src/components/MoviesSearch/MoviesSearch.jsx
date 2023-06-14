@@ -44,7 +44,6 @@ const MoviesSearch = () => {
       } catch {
         console.log('Oops! Something went wrong! Try again!');
         errorMessage('Oops! Something went wrong! Try again!');
-        // return navigate(`*`);
         return;
       }
     })();
